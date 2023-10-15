@@ -1,0 +1,17 @@
+# Development files
+tests/
+*.test.js
+*.config.js
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# Configuration files
+.env
+config/
+
+# Build files
+dist/
+build/
