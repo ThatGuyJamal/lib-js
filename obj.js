@@ -19,6 +19,15 @@ export class ObjectUtils {
 	}
 
 	/**
+	 * Merges multiple objects into a new object.
+	 * @param  {...any} objects - The array of objects to merge.
+	 * @returns {Object} The merged object.
+	 */
+	static mergeManyObjects(...objects) {
+		return objects.reduce((acc, obj) => ObjectUtils.mergeObjects(acc, obj), {});
+	}
+
+	/**
 	 * Checks whether a variable is an object and not an array.
 	 * @param {*} item - The variable to be checked.
 	 * @returns {Boolean} True if the item is an object, false otherwise.
