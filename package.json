@@ -1,6 +1,6 @@
 {
   "name": "@thatguyjamal/lib-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A collection of sharable library's used in talent tree",
   "main": "index.js",
   "type": "module",
