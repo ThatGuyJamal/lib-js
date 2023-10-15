@@ -1,20 +1,18 @@
 {
-  "name": "@thatguyjamal/lib-js",
-  "version": "1.0.2",
-  "description": "A collection of javascript helpers and utilities.",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ThatGuyJamal/lib-js.git"
-  },
-  "author": "ThatGuyJamal",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ThatGuyJamal/lib-js/issues"
-  },
-  "homepage": "https://github.com/ThatGuyJamal/lib-js#readme"
+	"name": "@thatguyjamal/lib-js",
+	"version": "1.0.3",
+	"description": "A collection of javascript helpers and utilities.",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ThatGuyJamal/lib-js.git"
+	},
+	"author": "ThatGuyJamal",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ThatGuyJamal/lib-js/issues"
+	},
+	"homepage": "https://github.com/ThatGuyJamal/lib-js#readme"
 }

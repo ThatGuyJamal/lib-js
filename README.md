@@ -21,3 +21,19 @@ npm install @thatguyjamal/lib-js
 | [ArrayUtils]()                        | Helper methods for arrays                            |     |
 | [StringUtils]()                       | Helper methods for strings                           |     |
 | [Validator]()                         | Helpful validators for utils, emails, passwords, etc |     |
+
+## Usage
+
+```js
+// Instance classes
+import { Cache } from '@thatguyjamal/lib-js';
+import { TaskQueue } from '@thatguyjamal/lib-js';
+import { LazyTaskQueue } from '@thatguyjamal/lib-js';
+
+// Static classes
+import { Validator } from '@thatguyjamal/lib-js';
+import { FuncHelper } from '@thatguyjamal/lib-js';
+import { MathUtils } from '@thatguyjamal/lib-js';
+import { ArrayUtils } from '@thatguyjamal/lib-js';
+import { ObjectUtils } from '@thatguyjamal/lib-js';
+```

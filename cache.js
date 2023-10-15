@@ -36,7 +36,7 @@ export class Cache {
 	#keep(k, v) {
 		if (this.#index >= this.#limit) {
 			this.#previous = this.#current;
-			this.#purge(1);
+			this.#purge();
 			this.#index++;
 		}
 
@@ -44,12 +44,14 @@ export class Cache {
 	}
 	/**
 	 * Purges the cache.
-	 * @param {*} isPartial
+	 * @param {Boolean | undefined} isPartial If true, only the current cache will be purged.
 	 */
 	#purge(isPartial) {
 		this.#index = 0;
 		this.#current = {};
-		isPartial || (this.#previous = {});
+		if (!isPartial) {
+			this.#previous = {};
+		}
 	}
 
 	/**
