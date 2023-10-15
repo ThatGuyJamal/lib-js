@@ -1,7 +1,7 @@
 {
   "name": "@thatguyjamal/lib-js",
-  "version": "1.0.1",
-  "description": "A collection of sharable library's used in talent tree",
+  "version": "1.0.2",
+  "description": "A collection of javascript helpers and utilities.",
   "main": "index.js",
   "type": "module",
   "scripts": {
