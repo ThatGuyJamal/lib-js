@@ -1,6 +1,6 @@
 {
 	"name": "@thatguyjamal/lib-js",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "A collection of javascript helpers and utilities.",
 	"main": "index.js",
 	"type": "module",
@@ -14,5 +14,13 @@
 	"bugs": {
 		"url": "https://github.com/ThatGuyJamal/lib-js/issues"
 	},
-	"homepage": "https://github.com/ThatGuyJamal/lib-js#readme"
+	"homepage": "https://github.com/ThatGuyJamal/lib-js#readme",
+	"keywords": [
+		"helpers",
+		"utilities",
+		"javascript",
+		"js",
+		"lib",
+		"library"
+	]
 }
