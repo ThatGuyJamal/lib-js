@@ -1,6 +1,6 @@
 # Lib-Js
 
-A collection of javascript helpers and utilities.
+A collection of javascript helpers and utilities using zero dependencies.
 
 ## Installation
 
