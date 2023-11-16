@@ -1,4 +1,4 @@
-class ArrayUtils {
+export class ArrayUtils {
 	/**
 	 * Removes duplicate values from an array.
 	 * @param {Array} array - The array to remove duplicates from.

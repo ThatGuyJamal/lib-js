@@ -1,4 +1,4 @@
-class StringUtils {
+export class StringUtils {
 	/**
 	 * Checks if a string contains a specific substring.
 	 * @param {string} str - The string to check.

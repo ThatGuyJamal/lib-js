@@ -1,6 +1,6 @@
 {
 	"name": "@thatguyjamal/lib-js",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "My personal collection of javascript helpers and utilities.",
 	"main": "index.js",
 	"type": "module",
