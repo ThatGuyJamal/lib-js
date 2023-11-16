@@ -37,3 +37,11 @@ import { MathUtils } from '@thatguyjamal/lib-js';
 import { ArrayUtils } from '@thatguyjamal/lib-js';
 import { ObjectUtils } from '@thatguyjamal/lib-js';
 ```
+
+Most of the classes are static classes, meaning you can use them without instantiating them.
+
+```js
+import { Validator } from '@thatguyjamal/lib-js';
+
+const isValidEmail = Validator.isEmail('starthisrepo@github.com'); // true
+```
