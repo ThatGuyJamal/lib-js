@@ -202,4 +202,111 @@ declare module '@thatguyjamal/lib-js' {
 		 */
 		static accessObject<T>(obj: object, path: string): T | undefined;
 	}
+	export class StringUtils {
+		/**
+		 * Checks if a string contains a specific substring.
+		 * @param {string} str - The string to check.
+		 * @param {string} substr - The substring to look for.
+		 * @returns {boolean} Returns true if the substring is found, false otherwise.
+		 */
+		static contains(str: string, substr: string): boolean;
+
+		/**
+		 * Capitalizes the first letter of a string.
+		 * @param {string} str - The string to capitalize.
+		 * @returns {string} The capitalized string.
+		 */
+		static capitalize(str: string): string;
+
+		/**
+		 * Reverses a string.
+		 * @param {string} str - The string to reverse.
+		 * @returns {string} The reversed string.
+		 */
+		static reverse(str: string): string;
+
+		/**
+		 * Truncates a string to a specified length and appends '...' if truncated.
+		 * @param {string} str - The string to truncate.
+		 * @param {number} length - The maximum length of the truncated string.
+		 * @returns {string} The truncated string.
+		 */
+		static truncate(str: string, length: number): string;
+
+		/**
+		 * Counts the occurrences of a substring in a string.
+		 * @param {string} str - The string to search.
+		 * @param {string} substr - The substring to count.
+		 * @returns {number} The number of occurrences of the substring in the string.
+		 */
+		static countOccurrences(str: string, substr: string): number;
+
+		/**
+		 * Checks if a string is empty or consists of only whitespace.
+		 * @param {string} str - The string to check.
+		 * @returns {boolean} Returns true if the string is empty or whitespace, false otherwise.
+		 */
+		static isEmptyOrWhitespace(str: string): boolean;
+
+		/**
+		 * Splits a string into an array of substrings based on a delimiter.
+		 * @param {string} str - The string to split.
+		 * @param {string} delimiter - The delimiter to use for splitting.
+		 * @returns {Array<string>} An array of substrings.
+		 */
+		static splitString(str: string, delimiter: string): string[];
+	}
+	export class TaskQueue {
+		/**
+		 * Adds a task to the queue
+		 * @param {Function} task - A function to process later
+		 * @throws {Error} - If the task is not a function
+		 * @returns {void}
+		 */
+		add(task: () => Promise<void>): void;
+	}
+	export class Validator {
+		/**
+		 * Checks if a string is a valid email address.
+		 * @param {string} email - The email address to validate.
+		 * @returns {boolean} Returns true if the email is valid, false otherwise.
+		 */
+		static isValidEmail(email: string): boolean;
+
+		/**
+		 * Checks if a string is a valid URL.
+		 * @param {string} url - The URL to validate.
+		 * @returns {boolean} Returns true if the URL is valid, false otherwise.
+		 */
+		static isValidURL(url: string): boolean;
+
+		/**
+		 * Checks if a value is a number.
+		 * @param {*} value - The value to check.
+		 * @returns {boolean} Returns true if the value is a number, false otherwise.
+		 */
+		static isNumber(value: any): boolean;
+
+		/**
+		 * Checks if a string is a valid phone number.
+		 * @param {string} phoneNumber - The phone number to validate.
+		 * @returns {boolean} Returns true if the phone number is valid, false otherwise.
+		 */
+		static isValidPhoneNumber(phoneNumber: string): boolean;
+
+		/**
+		 * Hashes a password using SHA-256.
+		 * @param {string} password - The password to hash.
+		 * @returns {string} The hashed password.
+		 */
+		static hashPassword(password: string): string;
+
+		/**
+		 * Checks if a password matches a given hash.
+		 * @param {string} password - The password to check.
+		 * @param {string} hash - The hash to compare against.
+		 * @returns {boolean} Returns true if the password matches the hash, false otherwise.
+		 */
+		static checkPassword(password: string, hash: string): boolean;
+	}
 }
