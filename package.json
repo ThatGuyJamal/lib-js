@@ -1,9 +1,10 @@
 {
 	"name": "@thatguyjamal/lib-js",
-	"version": "1.0.4",
-	"description": "A collection of javascript helpers and utilities.",
+	"version": "1.0.5",
+	"description": "My personal collection of javascript helpers and utilities.",
 	"main": "index.js",
 	"type": "module",
+	"types": "types.d.ts",
 	"scripts": {},
 	"repository": {
 		"type": "git",
