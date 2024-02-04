@@ -41,17 +41,23 @@ export class TaskQueue {
 		this.#running = true;
 
 		new Promise((resolve, reject) => {
-			task()
-				.then(() => {
-					resolve();
-				})
-				.catch((err) => {
-					console.error('Task error:', err);
-					reject(err);
-				})
-				.finally(() => {
-					this.#execute();
-				});
+			try {
+				task()
+					.then(() => {
+						resolve();
+					})
+					.catch((err) => {
+						console.error('Task error:', err);
+						reject(err);
+					})
+					.finally(() => {
+						this.#execute();
+					});
+			} catch (error) {
+				console.error('Task execution error:', error);
+				reject(error);
+				this.#execute();
+			}
 		});
 	}
 
