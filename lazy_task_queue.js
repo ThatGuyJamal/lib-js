@@ -39,17 +39,23 @@ export class LazyTaskQueue {
 		this.#running = true;
 
 		new Promise((resolve, reject) => {
-			task()
-				.then(() => {
-					resolve();
-				})
-				.catch((err) => {
-					console.error('Task error:', err);
-					reject(err);
-				})
-				.finally(() => {
-					this.#running = false;
-				});
+			try {
+				task()
+					.then(() => {
+						resolve();
+					})
+					.catch((err) => {
+						console.error('Task error:', err);
+						reject(err);
+					})
+					.finally(() => {
+						this.#running = false;
+					});
+			} catch (error) {
+				console.error('Task execution error:', error);
+				reject(error);
+				this.#running = false;
+			}
 		});
 	}
 
