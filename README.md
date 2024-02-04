@@ -32,6 +32,8 @@ import { Validator } from '@thatguyjamal/lib-js';
 const isValidEmail = Validator.isEmail('starthisrepo@github.com'); // true
 ```
 
+Please read the source code to learn how to use the classes, enjoy!
+
 ## Classes
 
 | Utilities/Helpers                     | Description                                          |     |
