@@ -1,7 +1,7 @@
 {
 	"name": "@thatguyjamal/lib-js",
-	"version": "1.0.7",
-	"description": "My personal collection of javascript helpers and utilities.",
+	"version": "1.0.8",
+	"description": "An opinionated collection of helpful JavaScript functions in one NPM package. ",
 	"main": "index.js",
 	"type": "module",
 	"types": "types.d.ts",
