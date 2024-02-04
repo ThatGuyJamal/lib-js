@@ -8,6 +8,7 @@ export class Cache {
 	#current;
 	/** The previous cache */
 	#previous;
+	
 	/**
 	 * `Cache`
 	 *
@@ -22,7 +23,7 @@ export class Cache {
 	 * @param {Number | undefined} max The max value to keep in cache before purging stale values. Default value is 5.
 	 */
 	constructor(max) {
-		this.#limit = max | 5;
+		this.#limit = max || 5;
 		this.#index = 0;
 		this.#current = {};
 		this.#previous = {};
@@ -55,16 +56,17 @@ export class Cache {
 	}
 
 	/**
-	 * Checks of the key is a number or string.
+	 * Checks if the key is a number or string.
 	 * @param {Object} key
 	 *
 	 * Throws an error if the value is not a number or string.
 	 */
 	#isNumberOrString(key) {
-		if (typeof key !== 'number' || typeof key !== 'string') {
+		if (typeof key !== 'number' && typeof key !== 'string') {
 			throw new Error('The key must be a number or string');
 		}
 	}
+
 	/**
 	 * Read a value from the cache.
 	 * @param {Number | String} k
@@ -77,6 +79,7 @@ export class Cache {
 		}
 		return null;
 	}
+
 	/**
 	 * Writes a value to the cache.
 	 * @param {Number | String} k
@@ -90,6 +93,7 @@ export class Cache {
 			this.#keep(k, v);
 		}
 	}
+
 	/**
 	 * Checks if the key exists in the current or previous cache.
 	 * @param {Number | String} k The key to check.
@@ -99,6 +103,7 @@ export class Cache {
 		this.#isNumberOrString(k);
 		return this.#current[k] !== undefined || this.#previous[k] !== undefined;
 	}
+
 	/**
 	 * Clears the cache.
 	 */
